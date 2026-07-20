@@ -1,0 +1,6 @@
+numpy
+pandas
+scipy
+matplotlib>=3.8
+python-Levenshtein>=0.21
+openpyxl
