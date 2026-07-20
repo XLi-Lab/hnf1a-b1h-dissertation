@@ -1,0 +1,25 @@
+# Input data (available on request; not committed)
+input/
+*.fastq.gz
+*.fastq
+
+# Processed Phase 1 enrichment table (available on request)
+HNF1A_B1H_all_motifs_corrected_2.csv
+
+# Deep mutational scanning datasets (unpublished, Lehner laboratory; permission required)
+hnf1a_var_690.xlsx
+hnf1a_var_motif_var_11378.xlsx
+hnf1a_motifs_binding_wt_51.xlsx
+wildtype.xlsx
+
+# Extracted AlphaFold outputs (the .zip is tracked; the unzipped folder is not)
+af3/
+folds_2026_06_22_14_59/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
