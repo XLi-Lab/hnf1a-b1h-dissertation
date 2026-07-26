@@ -15,7 +15,7 @@ including the assumption checks and the multiple-comparison corrections.
 | `hnf1a_b1h_pipeline.py` | Phase 1 bacterial one-hybrid: demultiplexing, counting, log2FC, tissue annotation, tier assignment | 3.1 to 3.6 |
 | `analyse_consensus_distance.py` | Tier 1 consensus by majority vote and Hamming distance by functional class | 3.8 |
 | `analyse_af3_confidence.py` | AlphaFold 3 model confidence for the 21 modelled sites | 3.10 |
-| `analyse_cici_dms.py` | Deep mutational scan: site variants, coding variants, per-residue fitness, protein by DNA doubles | 3.11 to 3.15 |
+| `analyse_dms.py` | Deep mutational scan: site variants, coding variants, per-residue fitness, protein by DNA doubles | 3.11 to 3.15 |
 
 ## Statistical policy
 
