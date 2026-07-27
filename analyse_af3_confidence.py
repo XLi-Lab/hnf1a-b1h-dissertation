@@ -134,7 +134,7 @@ print("    normality is not supported in every class, so Kruskal-Wallis is the o
 Fa,pa=f_oneway(*grp)
 df_b,df_w=len(grp)-1,sum(len(g) for g in grp)-len(grp)
 print(f"\n  one-way ANOVA (for the record, not used for inference)")
-print(f"    F({df_b},{df_w}) = {Fa:.3f}   raw p = {pa:.4f}   Bonferroni-adjusted p = {bonf(pa,K):.3f}")
+print(f"    F({df_b},{df_w}) = {Fa:.3f}   raw p = {pa:.4f}")
 
 Hk,pk=kruskal(*grp)
 print(f"  omnibus  Kruskal-Wallis across 3 classes")
@@ -142,7 +142,7 @@ print(f"    H = {Hk:.3f}   raw p = {pk:.4f}   Bonferroni-adjusted p = {bonf(pk,K
 
 pu=mannwhitneyu(g1,gn,alternative='two-sided').pvalue
 print(f"  planned  binders (T1+T2) vs non-responders, Mann-Whitney U")
-print(f"    raw p = {pu:.4f}   Bonferroni-adjusted p = {bonf(pu,K):.1f}")
+print(f"    raw p = {pu:.4f}   Bonferroni-adjusted p = {bonf(pu,K):.2f}")
 print("  the omnibus is null, so no post-hoc pairwise test is run")
 
 top=max(pts,key=lambda p:p[1]); print(f"\n  most confident model overall : {top[3].upper()} ({top[0]}), interface ipTM {top[1]:.2f}")
